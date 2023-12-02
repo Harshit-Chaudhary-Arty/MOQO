@@ -1,0 +1,44 @@
+@font-face{
+    font-family: varhead;
+    src: url(./Heading-Now-Variable.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    /* background-color: rgb(255, 0, 0); */
+    font-family: varhead;
+    overflow: hidden;
+    position: relative;
+}
+
+#page1 h1{
+    font-size: 42vw;
+    text-transform: uppercase;
+    font-stretch: 350%;
+    letter-spacing: -1.2vw;
+    white-space: nowrap;
+    position: absolute;
+    padding: 0;
+    top:-7vh;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
