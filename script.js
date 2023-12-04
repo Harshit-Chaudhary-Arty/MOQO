@@ -60,5 +60,15 @@ pointeranim()
 
 var navi=document.querySelector("#page1 #nav #menu")
 navi.addEventListener("click", function(){
-    navi.style.color="black"
+    navi.style.color="black";
+    navmenu()
+    
 })
+
+
+
+function navmenu(){
+    gsap.to("#navmenu",{
+        transform:"translateX(-40vw)",
+    })
+}
