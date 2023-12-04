@@ -55,5 +55,10 @@ vidcontainer.addEventListener("mouseleave",function(){
     })
 })
 }
-
 pointeranim()
+
+
+var navi=document.querySelector("#page1 #nav #menu")
+navi.addEventListener("click", function(){
+    navi.style.color="black"
+})
