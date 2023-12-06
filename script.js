@@ -1,14 +1,14 @@
 gsap.to("#main #page1 h1",{
-    transform:"translateX(-35%)",
+    transform:"translateX(-40%)",
     // fontStretch:"100%",
     fontWeight:"100",
     // delay:0.5,
     scrollTrigger:{
         scroller:"body",
         trigger:"#page1",
-        // markers:true,
+        markers:true,
         start:"top 0",
-        end:"top -100%",
+        end:"top -150%",
         scrub:2,
         pin:true,
     }
@@ -24,7 +24,7 @@ gsap.from("#page1 #video",{
     scrollTrigger:{
         scroller:"body",
         trigger:"#video",
-        markers:true,
+        // markers:true,
         scrub:2,
         start:"top 190%",
         end:"top 225%",
@@ -60,15 +60,28 @@ pointeranim()
 
 var navi=document.querySelector("#page1 #nav #menu")
 navi.addEventListener("click", function(){
-    navi.style.color="black";
+    if(click<1){navi.style.color="black"
     navmenu()
+    click++
+    }
+    else{
+        navmenuclose()
+        click=0
+        navi.style.color="white"
+    }
     
 })
 
-
+var click=0;
 
 function navmenu(){
     gsap.to("#navmenu",{
         transform:"translateX(-40vw)",
+    })
+}
+
+function navmenuclose(){
+    gsap.to("#navmenu",{
+        transform:"translateX(40vw)",
     })
 }

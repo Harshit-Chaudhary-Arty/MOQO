@@ -13,6 +13,8 @@
 html , body{
     height: 100%;
     width: 100%;
+    font-family: varhead;
+
     /* overflow: hidden; */
 }
 
@@ -44,12 +46,7 @@ html , body{
     /* top:-7vh; */
 }
 
-#page2{
-    height: 100vh;
-    width: 100%;
-    color: white;
-    background-color: black;
-}
+
 
 #nav{
     /* background-color: red; */
@@ -113,6 +110,7 @@ video{
     width: 150px;
     color: white;
     background-color: black;
+    /* mix-blend-mode: difference; */
     border-radius: 50%;
     z-index: 100;
     position: fixed;
@@ -153,4 +151,53 @@ video{
     font-weight: 200;
     border-bottom: solid 1px black ;
     padding-right: 3%;
+}
+
+#page2{
+    background-color: white;
+    color: black;
+    position: relative;
+    height: 80vw;
+    width: 100%;
+}
+
+#title{
+    height: 40%;
+    width: 80%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 20%;
+}
+
+#tright{
+    text-align: right;
+}
+
+.t h1{
+    font-weight: 400;
+    font-stretch: 850%;
+    font-size: 5.3vw;
+    line-height: 1.1;
+}
+
+.case{
+    min-height: 40vh;
+    width: 80%;
+}
+
+#case1{
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 70%;
+    position: absolute;
+}
+
+#case1 img{
+    width: 100%;
+
 }
