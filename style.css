@@ -187,17 +187,26 @@ video{
 
 .case{
     min-height: 40vh;
-    width: 80%;
+    width: 80%; transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
 }
 
 #case1{
     transform: translate(-50%,-50%);
     left: 50%;
     top: 70%;
-    position: absolute;
+    
 }
 
-#case1 img{
+.case img{
     width: 100%;
+}
 
+
+#page3{
+    height: 200vh;
+    width: 100%;
+    position: relative;
 }

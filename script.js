@@ -105,18 +105,17 @@ gsap.from("#title .t",{
 
 
 gsap.from(".case img ",{
-    y:"200%",
+    y:"250%",
     stagger:0.4,
+    duration:2,
     // delay:1,
     opacity:"0",
     scrollTrigger:{
         scroller:"body",
         trigger:"#page2 #case1",
-        start:"top 90%",
+        start:"top 80%",
         markers:true,
-        end:"top 60%",
-        scrub:3
-
+        end:"top 20%",
+        scrub:2,
     }
-
 })
