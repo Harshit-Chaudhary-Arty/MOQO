@@ -85,3 +85,38 @@ function navmenuclose(){
         transform:"translateX(40vw)",
     })
 }
+
+gsap.from("#title .t",{
+    y:"200%",
+    stagger:0.4,
+    // delay:1,
+    opacity:"0",
+    scrollTrigger:{
+        scroller:"body",
+        trigger:"#page2",
+        start:"top 60%",
+        // markers:true,
+        end:"top 10%",
+        scrub:3
+
+    }
+
+})
+
+
+gsap.from(".case img ",{
+    y:"200%",
+    stagger:0.4,
+    // delay:1,
+    opacity:"0",
+    scrollTrigger:{
+        scroller:"body",
+        trigger:"#page2 #case1",
+        start:"top 90%",
+        markers:true,
+        end:"top 60%",
+        scrub:3
+
+    }
+
+})
