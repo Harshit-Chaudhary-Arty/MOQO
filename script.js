@@ -187,18 +187,29 @@ gsap.from("#case5 img ",{
 var cpointer= document.querySelector("#cpointer")
 document.querySelector(".case")
 
-document.querySelector("#page2 .case").addEventListener("mouseenter",function(){
+document.querySelector("#page2 #case1").addEventListener("mouseenter",function(){
     gsap.to(cpointer,{
         scale:1,
         opacity:1
     })
 })
-document.querySelector("#page2 .case").addEventListener("mouseleave",function(){
+document.querySelector("#page2 #case1").addEventListener("mouseleave",function(){
     gsap.to(cpointer,{
         scale:0,
         opacity:0
     })
 })
+document.querySelector("#page2 #case1").addEventListener("mousemove",function(dets){
+    gsap.to(cpointer,{
+        left:dets.x,
+        top:dets.y,
+        backgroundColor:"red"
+
+    })
+})
+
+
+
 
 document.querySelector("#page3 #case2").addEventListener("mouseenter",function(){
     gsap.to(cpointer,{
@@ -212,6 +223,17 @@ document.querySelector("#page3 #case2").addEventListener("mouseleave",function()
         opacity:0
     })
 })
+document.querySelector("#page3 #case2").addEventListener("mousemove",function(dets){
+    gsap.to(cpointer,{
+        left:dets.x,
+        top:dets.y,
+        backgroundColor:"orange"
+
+    })
+})
+
+
+
 
 document.querySelector("#page3 #case3").addEventListener("mouseenter",function(){
     gsap.to(cpointer,{
@@ -225,29 +247,49 @@ document.querySelector("#page3 #case3").addEventListener("mouseleave",function()
         opacity:0
     })
 })
+document.querySelector("#page3 #case3").addEventListener("mousemove",function(dets){
+    gsap.to(cpointer,{
+        left:dets.x,
+        top:dets.y,
+        backgroundColor:"skyblue"
 
-document.querySelector("#page3 #case4").addEventListener("mouseenter",function(){
-    gsap.to(cpointer,{
-        scale:1,
-        opacity:1
     })
 })
-document.querySelector("#page3 #case4").addEventListener("mouseleave",function(){
-    gsap.to(cpointer,{
-        scale:0,
-        opacity:0
-    })
-})
+
+
+// document.querySelector("#page3 #case4").addEventListener("mouseenter",function(){
+//     gsap.to(cpointer,{
+//         scale:1,
+//         opacity:1,
+//         backgroundColor:"orange"
+
+//     })
+// })
+// document.querySelector("#page3 #case4").addEventListener("mouseleave",function(){
+//     gsap.to(cpointer,{
+//         scale:0,
+//         opacity:0
+//     })
+// })
+
+
 
 document.querySelector("#page3 #case5").addEventListener("mouseenter",function(){
     gsap.to(cpointer,{
         scale:1,
-        opacity:1
+        opacity:1,
+        backgroundColor:"yellowgreen"
     })
 })
 document.querySelector("#page3 #case5").addEventListener("mouseleave",function(){
     gsap.to(cpointer,{
         scale:0,
         opacity:0
+    })
+})
+document.querySelector("#page3 #case5").addEventListener("mousemove",function(dets){
+    gsap.to(cpointer,{
+        left:dets.x,
+        top:dets.y,         
     })
 })
