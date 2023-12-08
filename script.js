@@ -185,7 +185,7 @@ gsap.from("#case5 img ",{
 })
 
 var cpointer= document.querySelector("#cpointer")
-document.querySelectorAll(".case")
+var cvid= document.querySelectorAll(".case")
 
 cvid.addEventListener("mouseenter",function(){
     gsap.to(cpointer,{
