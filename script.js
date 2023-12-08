@@ -185,15 +185,67 @@ gsap.from("#case5 img ",{
 })
 
 var cpointer= document.querySelector("#cpointer")
-var cvid= document.querySelectorAll(".case")
+document.querySelector(".case")
 
-cvid.addEventListener("mouseenter",function(){
+document.querySelector("#page2 .case").addEventListener("mouseenter",function(){
     gsap.to(cpointer,{
         scale:1,
         opacity:1
     })
 })
-cvid.addEventListener("mouseleave",function(){
+document.querySelector("#page2 .case").addEventListener("mouseleave",function(){
+    gsap.to(cpointer,{
+        scale:0,
+        opacity:0
+    })
+})
+
+document.querySelector("#page3 #case2").addEventListener("mouseenter",function(){
+    gsap.to(cpointer,{
+        scale:1,
+        opacity:1
+    })
+})
+document.querySelector("#page3 #case2").addEventListener("mouseleave",function(){
+    gsap.to(cpointer,{
+        scale:0,
+        opacity:0
+    })
+})
+
+document.querySelector("#page3 #case3").addEventListener("mouseenter",function(){
+    gsap.to(cpointer,{
+        scale:1,
+        opacity:1
+    })
+})
+document.querySelector("#page3 #case3").addEventListener("mouseleave",function(){
+    gsap.to(cpointer,{
+        scale:0,
+        opacity:0
+    })
+})
+
+document.querySelector("#page3 #case4").addEventListener("mouseenter",function(){
+    gsap.to(cpointer,{
+        scale:1,
+        opacity:1
+    })
+})
+document.querySelector("#page3 #case4").addEventListener("mouseleave",function(){
+    gsap.to(cpointer,{
+        scale:0,
+        opacity:0
+    })
+})
+
+document.querySelector("#page3 #case5").addEventListener("mouseenter",function(){
+    gsap.to(cpointer,{
+        scale:1,
+        opacity:1
+    })
+})
+document.querySelector("#page3 #case5").addEventListener("mouseleave",function(){
     gsap.to(cpointer,{
         scale:0,
         opacity:0
