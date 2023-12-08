@@ -99,11 +99,7 @@ video{
     height:100vh;
 }
 
-#page3{
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-}
+
 
 #pointer{
     height: 150px;
@@ -206,7 +202,48 @@ video{
 
 
 #page3{
-    height: 200vh;
+    min-height: 200vh;
     width: 100%;
     position: relative;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; */
 }
+
+#case2{
+    top: 20%;
+}
+
+#case3{
+    top: 65%;
+}
+
+#case4{
+    top: 115%;
+}
+
+#case5{
+    top:165%;
+}
+
+#cpointer{
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    z-index: 110;
+    position: fixed;
+    text-align: center;
+    /* scale: 0;
+    opacity: 0; */
+    display: flex;
+    align-items: center;
+    
+}
+
+#cpointer h2{
+    font-family: varhead;
+    font-stretch: 900%;
+}
+

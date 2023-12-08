@@ -1,5 +1,5 @@
 gsap.to("#main #page1 h1",{
-    transform:"translateX(-40%)",
+    transform:"translateX(-45%)",
     // fontStretch:"100%",
     fontWeight:"100",
     // delay:0.5,
@@ -8,7 +8,7 @@ gsap.to("#main #page1 h1",{
         trigger:"#page1",
         markers:true,
         start:"top 0",
-        end:"top -150%",
+        end:"top -180%",
         scrub:2,
         pin:true,
     }
@@ -26,7 +26,7 @@ gsap.from("#page1 #video",{
         trigger:"#video",
         // markers:true,
         scrub:2,
-        start:"top 190%",
+        start:"top 170%",
         end:"top 225%",
     }
 })
@@ -104,7 +104,7 @@ gsap.from("#title .t",{
 })
 
 
-gsap.from(".case img ",{
+gsap.from("#case1 img ",{
     y:"250%",
     stagger:0.4,
     duration:2,
@@ -114,8 +114,74 @@ gsap.from(".case img ",{
         scroller:"body",
         trigger:"#page2 #case1",
         start:"top 80%",
-        markers:true,
-        end:"top 20%",
+        // markers:true,
+        end:"top 30%",
         scrub:2,
     }
 })
+
+gsap.from("#case2 img ",{
+    y:"250%",
+    stagger:0.4,
+    duration:2,
+    // delay:1,
+    opacity:"0",
+    scrollTrigger:{
+        scroller:"body",
+        trigger:"#page3 #case2",
+        start:"top 80%",
+        // markers:true,
+        end:"top 30%",
+        scrub:2,
+    }
+})
+
+gsap.from("#case3 img ",{
+    y:"250%",
+    stagger:0.4,
+    duration:2,
+    // delay:1,
+    opacity:"0",
+    scrollTrigger:{
+        scroller:"body",
+        trigger:"#page3 #case3",
+        start:"top 80%",
+        // markers:true,
+        end:"top 30%",
+        scrub:2,
+    }
+})
+
+gsap.from("#case4 img ",{
+    y:"250%",
+    stagger:0.4,
+    duration:2,
+    // delay:1,
+    opacity:"0",
+    scrollTrigger:{
+        scroller:"body",
+        trigger:"#page3 #case4",
+        start:"top 80%",
+        // markers:true,
+        end:"top 30%",
+        scrub:2,
+    }
+})
+
+gsap.from("#case5 img ",{
+    y:"250%",
+    stagger:0.4,
+    duration:2,
+    // delay:1,
+    opacity:"0",
+    scrollTrigger:{
+        scroller:"body",
+        trigger:"#page3 #case5",
+        start:"top 80%",
+        // markers:true,
+        end:"top 30%",
+        scrub:2,
+    }
+})
+
+
