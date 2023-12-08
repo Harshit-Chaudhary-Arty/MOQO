@@ -293,3 +293,18 @@ document.querySelector("#page3 #case5").addEventListener("mousemove",function(de
         top:dets.y,         
     })
 })
+
+
+gsap.to("#tagline",{
+     backgroundColor:"black",
+     color:"white",
+     duration:0.6,
+     scrollTrigger:{
+        markers:true,
+        scroller:"body",
+        trigger:"#tagline",
+        start:"top 60%",
+        end:"top 30%",
+        scrub:1
+     }
+ })
