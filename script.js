@@ -6,7 +6,7 @@ gsap.to("#main #page1 h1",{
     scrollTrigger:{
         scroller:"body",
         trigger:"#page1",
-        markers:true,
+        // markers:true,
         start:"top 0",
         end:"top -180%",
         scrub:2,
@@ -300,7 +300,7 @@ gsap.to("#tagline",{
      color:"white",
      duration:0.6,
      scrollTrigger:{
-        markers:true,
+        // markers:true,
         scroller:"body",
         trigger:"#tagline",
         start:"top 60%",

@@ -299,3 +299,84 @@ video{
     font-size: 20vh;
    
 }
+
+#designc{
+    /* width: 100%; */
+    min-height: 170vh;
+    /* background-color: cyan; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#insight h1{
+    font-size: 26vh;
+    margin-top: 15%;
+    font-stretch: 300%;
+    font-weight: 900;
+    text-align: center;
+    line-height: 0.9;
+}
+
+#pic{
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    /* height: 100vh; */
+    /* background-color: red; */
+}
+
+#pic1, #pic2{
+    height: 90vh;
+    width: 45%;
+    background-color: purple;
+}
+
+#pic1{
+    background-image: url(mp1.jpg);
+}
+
+#pic2{
+    background-image: url(mp2.jpg);
+}
+
+#insight h2{
+    text-align: center;
+    font-size: 3vh;
+    margin-top: 5%;
+    font-stretch: 800%;
+    font-weight: 200;
+    line-height: 1;
+}
+
+
+#connect{
+    height: 90vh;
+}
+
+#connect h2{
+    text-align: center;
+    font-size: 3vh;
+    margin-top: 3%;
+    font-stretch: 800%;
+    font-weight: 200;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+#connect h1{
+    font-size: 26vh;
+    margin-top: 8%;
+    font-stretch: 300%;
+    font-weight: 900;
+    text-align: center;
+    line-height: 0.9;
+}
+
+#connect h2 a{
+   color: black;
+   font-size: 2.5vh;
+   font-weight: 400;
+}
