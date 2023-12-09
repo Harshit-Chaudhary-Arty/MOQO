@@ -351,5 +351,21 @@ gsap.to("#tagline",{
 }
 })
 
+gsap.to("#loader",{
+    y:"-100%",
+    duration:2,
+    delay:2.9,
+}
+)
+
+gsap.to("#hdot p",{
+    opacity:0,
+    y:"-70px",
+    stagger:-0.1,
+    duration:0.4,
+    repeat:4,
+    yoyo:true,
+})
+
 
 

@@ -18,6 +18,42 @@ html , body{
     /* overflow: hidden; */
 }
 
+#loader{
+    height: 100vh;
+    width: 100%;
+    color: yellowgreen;
+    position: fixed;
+    z-index: 300;
+    background-color: rgb(20, 20, 20);
+
+}
+
+#loader h1{
+    font-size: 26vh;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-stretch: 300%;
+    font-weight: 900;
+    text-align: center;
+    line-height: 0.9;
+    display: inline-block;
+}
+
+#hdot p{
+    display: inline-block;
+}
+
+#loader #hdot {
+    display: inline-block;
+    position: absolute;
+    left: 72%;
+    top: 50%;
+}
+
+
+
 #page1{
     height: 100vh;
     width: 100%;
