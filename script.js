@@ -314,7 +314,7 @@ gsap.to("#tagline",{
     opacity:0,
     stagger:0.2,
     scrollTrigger:{
-        markers:true,
+        // markers:true,
         scoller:"body",
         trigger:"#footer",
         start:"top 80%",
@@ -350,4 +350,6 @@ gsap.to("#tagline",{
         scrub:2,
 }
 })
+
+
 
