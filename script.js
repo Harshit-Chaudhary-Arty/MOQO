@@ -308,3 +308,46 @@ gsap.to("#tagline",{
         scrub:1
      }
  })
+
+ gsap.from(" #footer div",{
+    y:"150",
+    opacity:0,
+    stagger:0.2,
+    scrollTrigger:{
+        markers:true,
+        scoller:"body",
+        trigger:"#footer",
+        start:"top 80%",
+        end:"top 50%",
+        scrub:2,
+    }
+ })
+
+ gsap.from("#designc div",{
+        y:"150",
+        opacity:0,
+        stagger:0.2,
+    scrollTrigger:{
+        // markers:true,
+        scoller:"body",
+        trigger:"#designc",
+        start:"top 30%",
+        end:"top -5%",
+        scrub:2,
+    }
+ })
+
+ gsap.from("#connect h1, #connect h2",{
+    y:"150",
+    opacity:0,
+    stagger:0.2,
+    scrollTrigger:{
+        // markers:true,
+        scoller:"body",
+        trigger:"#connect",
+        start:"top 40%",
+        end:"top -5%",
+        scrub:2,
+}
+})
+
